@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #138a33;
+  --color-secondary: #ec5b17;
+  --font-sans: var(--font-anek-bangla), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply text-gray-900 bg-white;
+  }
+  a, button {
+    @apply cursor-pointer;
+  }
+}
