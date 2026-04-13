@@ -8,19 +8,19 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
   {
-    image: 'https://picsum.photos/seed/agri1/1920/1080',
+    image: 'https://images.unsplash.com/photo-1639941798780-04529d362f9a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     title: 'আধুনিক কৃষিতে বিনিয়োগ করুন',
     subtitle: 'আপনার সম্পদ এবং পৃথিবী কি একসাথে বৃদ্ধি করতে প্রস্তুত? হাজার হাজার বিনিয়োগকারীদের সাথে যোগ দিন।',
     cta: 'বিনিয়োগ শুরু করুন',
   },
   {
-    image: 'https://picsum.photos/seed/agri2/1920/1080',
+    image: 'https://images.unsplash.com/photo-1558289282-647de9fdf608?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     title: 'কৃষকের মুখে হাসি ফোটান',
     subtitle: 'সরাসরি কৃষকের সাথে যুক্ত হয়ে তাদের উৎপাদিত পণ্যে বিনিয়োগ করুন এবং নিশ্চিত লাভ পান।',
     cta: 'প্রকল্পগুলো দেখুন',
   },
   {
-    image: 'https://picsum.photos/seed/agri3/1920/1080',
+    image: 'https://images.unsplash.com/photo-1696371269688-99fb137d154f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     title: 'বিশুদ্ধ পণ্যের নিশ্চয়তা',
     subtitle: 'আমাদের নিজস্ব খামারে উৎপাদিত ১০০% প্রাকৃতিক এবং বিশুদ্ধ পণ্য সরাসরি আপনার দুয়ারে।',
     cta: 'পণ্য কিনুন',
@@ -33,7 +33,7 @@ export default function Hero() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 15000);
     return () => clearInterval(timer);
   }, []);
 
