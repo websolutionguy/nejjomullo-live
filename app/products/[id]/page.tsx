@@ -8,15 +8,21 @@ import { Star, ShoppingCart, ShieldCheck, Truck, RotateCcw } from 'lucide-react'
 import { useCart } from '@/context/CartContext';
 import { motion } from 'motion/react';
 
+import MustardOil from '@/public/images/mustard-oil.jpg';
+import SundarbansNaturalHoney from '@/public/images/Sundarbans-Natural-Honey.jpg';
+import OrganicSpiceProcessing from '@/public/images/Organic-Spice-Processing.jpg';
+import CashewAlmondFarming from '@/public/images/Cashew & Almond Farming.jpg';
+import Ghee from '@/public/images/ghee.jpg';
+
 const productsData = [
-  { id: 'p1', title: 'খাঁটি গাওয়া ঘি (৫০০ গ্রাম)', price: 1250, image: 'https://picsum.photos/seed/p1/800/800', rating: 5, category: 'ওয়েল এন্ড ঘী', description: 'আমাদের এই গাওয়া ঘি সম্পূর্ণ প্রাকৃতিক উপায়ে তৈরি। কোনো প্রকার প্রিজারভেটিভ বা কৃত্রিম রং ব্যবহার করা হয়নি।' },
-  { id: 'p2', title: 'লিচু ফুলের মধু (১ কেজি)', price: 950, image: 'https://picsum.photos/seed/p2/800/800', rating: 4, category: 'মধু', description: 'লিচু বাগান থেকে সরাসরি সংগৃহীত ১০০% খাঁটি মধু। এতে রয়েছে প্রচুর পরিমাণে অ্যান্টি-অক্সিডেন্ট।' },
-  { id: 'p3', title: 'প্রিমিয়াম কাজু বাদাম (২৫০ গ্রাম)', price: 450, image: 'https://picsum.photos/seed/p3/800/800', rating: 5, category: 'নাটস্ এন্ড সীডস্', description: 'উন্নত মানের রোস্টেড কাজু বাদাম। স্বাস্থ্যকর স্ন্যাকস হিসেবে এটি অতুলনীয়।' },
-  { id: 'p4', title: 'অর্গানিক হলুদ গুঁড়া (২০০ গ্রাম)', price: 180, image: 'https://picsum.photos/seed/p4/800/800', rating: 4, category: 'মসলা', description: 'নিজেদের তত্ত্বাবধানে শুকানো এবং ভাঙানো খাঁটি হলুদ গুঁড়া।' },
-  { id: 'p5', title: 'সরিষার তেল (১ লিটার)', price: 280, image: 'https://picsum.photos/seed/p5/800/800', rating: 5, category: 'ওয়েল এন্ড ঘী', description: 'ঘানি ভাঙা খাঁটি সরিষার তেল। ঝাঁঝ এবং স্বাদে অতুলনীয়।' },
-  { id: 'p6', title: 'কালোজিরা মধু (৫০০ গ্রাম)', price: 750, image: 'https://picsum.photos/seed/p6/800/800', rating: 5, category: 'মধু', description: 'কালোজিরা ফুলের মধু। এটি অত্যন্ত পুষ্টিকর এবং ঔষধি গুণসম্পন্ন।' },
-  { id: 'p7', title: 'অর্গানিক মরিচ গুঁড়া (২০০ গ্রাম)', price: 190, image: 'https://picsum.photos/seed/p7/800/800', rating: 4, category: 'মসলা', description: 'উন্নত মানের মরিচ থেকে তৈরি খাঁটি মরিচ গুঁড়া।' },
-  { id: 'p8', title: 'কাঠবাদাম (৫০০ গ্রাম)', price: 850, image: 'https://picsum.photos/seed/p8/800/800', rating: 5, category: 'নাটস্ এন্ড সীডস্', description: 'প্রিমিয়াম কোয়ালিটির কাঠবাদাম। সরাসরি আমদানি করা।' },
+  { id: 'p1', title: 'খাঁটি গাওয়া ঘি (৫০০ গ্রাম)', price: 1250, image: Ghee, rating: 5, category: 'ওয়েল এন্ড ঘী', description: 'আমাদের এই গাওয়া ঘি সম্পূর্ণ প্রাকৃতিক উপায়ে তৈরি। কোনো প্রকার প্রিজারভেটিভ বা কৃত্রিম রং ব্যবহার করা হয়নি।' },
+  { id: 'p2', title: 'লিচু ফুলের মধু (১ কেজি)', price: 950, image: SundarbansNaturalHoney, rating: 4, category: 'মধু', description: 'লিচু বাগান থেকে সরাসরি সংগৃহীত ১০০% খাঁটি মধু। एते रय़ेछे प्रचुर परिमाणे अ्यान्टि-अक्सिडेन्ट।' },
+  { id: 'p3', title: 'প্রিমিয়াম কাজু বাদাম (২৫০ গ্রাম)', price: 450, image: CashewAlmondFarming, rating: 5, category: 'নাটস্ एन्ड सीडस्', description: 'উন্নত मानेर रोस्टेड काजू बादाम। स्वास्थ्यकर स्न्याकस हिसे एटि अतुलनीय।' },
+  { id: 'p4', title: 'অর্গানিক হলুদ গুঁড়া (২০০ গ্রাম)', price: 180, image: OrganicSpiceProcessing, rating: 4, category: 'মসলা', description: 'নিজেদের তত্ত্বাবধানে শুকানো এবং ভাঙানো খাঁটি হলুদ গুঁড়া।' },
+  { id: 'p5', title: 'সরিষার তেল (১ লিটার)', price: 280, image: MustardOil, rating: 5, category: 'ওয়েল এন্ড ঘী', description: 'ঘানি ভাঙা খাঁটি সরিষার তেল। ঝাঁঝ এবং স্বাদে অতুলনীয়।' },
+  { id: 'p6', title: 'কালোজিরা মধু (৫০০ গ্রাম)', price: 750, image: SundarbansNaturalHoney, rating: 5, category: 'মধু', description: 'কালোজিরা ফুলের মধু। এটি অত্যন্ত পুষ্টিকর এবং ঔষধি গুণসম্পন্ন।' },
+  { id: 'p7', title: 'অর্গানিক মরিচ গুঁড়া (২০০ গ্রাম)', price: 190, image: OrganicSpiceProcessing, rating: 4, category: 'মসলা', description: 'উন্নত মানের মরিচ থেকে তৈরি খাঁটি মরিচ গুঁড়া।' },
+  { id: 'p8', title: 'কাঠবাদাম (৫০০ গ্রাম)', price: 850, image: CashewAlmondFarming, rating: 5, category: 'নাটস্ এন্ড সীডস্', description: 'প্রিমিয়াম কোয়ালিটির কাঠবাদাম। সরাসরি আমদানি করা।' },
 ];
 
 export default function ProductDetail() {

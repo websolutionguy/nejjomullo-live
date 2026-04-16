@@ -1,5 +1,8 @@
 import Link from 'next/link';
 import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import Image from 'next/image';
+
+import footerLogo from '@/public/images/nejjomullo-footer.png';
 
 export default function Footer() {
   return (
@@ -8,10 +11,18 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
             <Link href="/" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+              {/* <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">N</span>
               </div>
-              <span className="text-2xl font-bold text-white">নেয্যমূল্য</span>
+              <span className="text-2xl font-bold text-white">নেয্যমূল্য</span> */}
+
+              <Image
+                src={footerLogo}
+                alt="Nejjomullo"
+                width={210}
+                height={80}
+                placeholder="blur"
+              />
             </Link>
             <p className="text-gray-400 mb-6 leading-relaxed">
               নেয্যমূল্য একটি আধুনিক এগ্রোটেক প্ল্যাটফর্ম যা কৃষক এবং বিনিয়োগকারীদের মধ্যে সরাসরি সংযোগ স্থাপন করে। আমরা কৃষি খাতে স্বচ্ছতা এবং সমৃদ্ধি নিশ্চিত করতে কাজ করি।
@@ -59,11 +70,11 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-secondary shrink-0" />
-                <span className="text-gray-400">লেভেল ৪, হাউজ ১২, রোড ৭, ধানমন্ডি, ঢাকা - ১২০৯</span>
+                <span className="text-gray-400">হাউজ ১২, লেভেল ৪, রোড ০৮, নিকুঞ্জ ২, ঢাকা - ১২২৯, বাংলাদেশ</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-secondary shrink-0" />
-                <span className="text-gray-400">+৮৮০ ১৭০০-০০০০০০</span>
+                <span className="text-gray-400">+৮৮ ০১৭১১-৩৪০০৮০</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-secondary shrink-0" />

@@ -9,12 +9,18 @@ import { ArrowRight, Star, Quote } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import MustardOil from '@/public/images/mustard-oil.jpg';
+import SundarbansNaturalHoney from '@/public/images/Sundarbans-Natural-Honey.jpg';
+import OrganicSpiceProcessing from '@/public/images/Organic-Spice-Processing.jpg';
+import CashewAlmondFarming from '@/public/images/Cashew & Almond Farming.jpg';
+import Ghee from '@/public/images/ghee.jpg';
+
 const featuredProjects = [
   {
     id: 'mustard-oil-1',
     title: 'প্রিমিয়াম সরিষার তেল উৎপাদন প্রকল্প',
     category: 'ওয়েল এন্ড ঘী',
-    image: 'https://picsum.photos/seed/oil/800/600',
+    image: MustardOil,
     roi: '১৫-১৮%',
     duration: '১২ মাস',
     raised: 450000,
@@ -25,7 +31,7 @@ const featuredProjects = [
     id: 'honey-collection-1',
     title: 'সুন্দরবনের প্রাকৃতিক মধু সংগ্রহ',
     category: 'মধু প্রজেক্ট',
-    image: 'https://picsum.photos/seed/honey/800/600',
+    image: SundarbansNaturalHoney,
     roi: '১২-১৫%',
     duration: '৮ মাস',
     raised: 800000,
@@ -36,7 +42,7 @@ const featuredProjects = [
     id: 'organic-spice-1',
     title: 'অর্গানিক মসলা প্রক্রিয়াজাতকরণ',
     category: 'মসলা প্রজেক্ট',
-    image: 'https://picsum.photos/seed/spice/800/600',
+    image: OrganicSpiceProcessing,
     roi: '১৪-১৭%',
     duration: '১০ মাস',
     raised: 320000,
@@ -46,24 +52,27 @@ const featuredProjects = [
 ];
 
 const featuredProducts = [
-  { id: 'p1', title: 'খাঁটি গাওয়া ঘি (৫০০ গ্রাম)', price: 1250, image: 'https://picsum.photos/seed/p1/400/400', rating: 5, category: 'ওয়েল এন্ড ঘী' },
-  { id: 'p2', title: 'লিচু ফুলের মধু (১ কেজি)', price: 950, image: 'https://picsum.photos/seed/p2/400/400', rating: 4, category: 'মধু' },
-  { id: 'p3', title: 'প্রিমিয়াম কাজু বাদাম (২৫০ গ্রাম)', price: 450, image: 'https://picsum.photos/seed/p3/400/400', rating: 5, category: 'নাটস্ এন্ড সীডস্' },
-  { id: 'p4', title: 'অর্গানিক হলুদ গুঁড়া (২০০ গ্রাম)', price: 180, image: 'https://picsum.photos/seed/p4/400/400', rating: 4, category: 'মসলা' },
+  { id: 'p1', title: 'খাঁটি গাওয়া ঘি (৫০০ গ্রাম)', price: 1250, image: Ghee, rating: 5, category: 'ওয়েল এন্ড ঘী' },
+  { id: 'p2', title: 'লিচু ফুলের মধু (১ কেজি)', price: 950, image: SundarbansNaturalHoney, rating: 4, category: 'মধু' },
+  { id: 'p3', title: 'প্রিমিয়াম কাজু বাদাম (২৫০ গ্রাম)', price: 450, image: CashewAlmondFarming, rating: 5, category: 'নাটস্ এন্ড সীডস্' },
+  { id: 'p4', title: 'অর্গানিক হলুদ গুঁড়া (২০০ গ্রাম)', price: 180, image: OrganicSpiceProcessing, rating: 4, category: 'মসলা' },
 ];
+
+import farmer from '@/public/images/farmer.jpg';
+import investor from '@/public/images/investor.jpg';
 
 const testimonials = [
   {
     name: 'আব্দুর রহমান',
     role: 'বিনিয়োগকারী',
     text: 'নেয্যমূল্য প্ল্যাটফর্মে বিনিয়োগ করে আমি অত্যন্ত সন্তুষ্ট। তাদের স্বচ্ছতা এবং নিয়মিত আপডেট আমাকে মুগ্ধ করেছে।',
-    image: 'https://picsum.photos/seed/u1/100/100',
+    image: investor,
   },
   {
     name: 'মো: করিম শেখ',
     role: 'কৃষক',
     text: 'আগে দালালের খপ্পরে পড়ে ন্যায্য দাম পেতাম না। এখন সরাসরি বিনিয়োগকারীদের সহায়তায় ভালো ফলন পাচ্ছি এবং সঠিক দাম পাচ্ছি।',
-    image: 'https://picsum.photos/seed/u2/100/100',
+    image: farmer,
   },
 ];
 

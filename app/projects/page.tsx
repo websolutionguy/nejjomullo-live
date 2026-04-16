@@ -6,12 +6,19 @@ import Footer from '@/components/Footer';
 import ProjectCard from '@/components/ProjectCard';
 import { Search } from 'lucide-react';
 
+import MustardOil from '@/public/images/mustard-oil.jpg';
+import SundarbansNaturalHoney from '@/public/images/Sundarbans-Natural-Honey.jpg';
+import OrganicSpiceProcessing from '@/public/images/Organic-Spice-Processing.jpg';
+import CashewAlmondFarming from '@/public/images/Cashew & Almond Farming.jpg';
+import DairyFarm from '@/public/images/Dairy Farm.jpg';
+import LayerPoultryFarm from '@/public/images/Layer Poultry Farm.jpg';
+
 const projects = [
   {
     id: 'mustard-oil-1',
     title: 'প্রিমিয়াম সরিষার তেল উৎপাদন প্রকল্প',
     category: 'ওয়েল এন্ড ঘী প্রজেক্ট',
-    image: 'https://picsum.photos/seed/oil/800/600',
+    image: MustardOil,
     roi: '১৫-১৮%',
     duration: '১২ মাস',
     raised: 450000,
@@ -22,7 +29,7 @@ const projects = [
     id: 'honey-collection-1',
     title: 'সুন্দরবনের প্রাকৃতিক মধু সংগ্রহ',
     category: 'মধু প্রজেক্ট',
-    image: 'https://picsum.photos/seed/honey/800/600',
+    image: SundarbansNaturalHoney,
     roi: '১২-১৫%',
     duration: '৮ মাস',
     raised: 800000,
@@ -33,7 +40,7 @@ const projects = [
     id: 'organic-spice-1',
     title: 'অর্গানিক মসলা প্রক্রিয়াজাতকরণ',
     category: 'মসলা প্রজেক্ট',
-    image: 'https://picsum.photos/seed/spice/800/600',
+    image: OrganicSpiceProcessing,
     roi: '১৪-১৭%',
     duration: '১০ মাস',
     raised: 320000,
@@ -44,7 +51,7 @@ const projects = [
     id: 'cashew-nuts-1',
     title: 'প্রিমিয়াম কাজু ও কাঠবাদাম চাষ',
     category: 'নাটস্ এন্ড সীডস্ প্রজেক্ট',
-    image: 'https://picsum.photos/seed/nuts/800/600',
+    image: CashewAlmondFarming,
     roi: '১৬-২০%',
     duration: '১৮ মাস',
     raised: 1200000,
@@ -55,7 +62,7 @@ const projects = [
     id: 'dairy-farm-1',
     title: 'উন্নত জাতের ডেইরি ফার্ম সম্প্রসারণ',
     category: 'দুধ এন্ড ডিম প্রজেক্ট',
-    image: 'https://picsum.photos/seed/dairy/800/600',
+    image: DairyFarm,
     roi: '১৩-১৬%',
     duration: '২৪ মাস',
     raised: 2500000,
@@ -66,7 +73,7 @@ const projects = [
     id: 'layer-chicken-1',
     title: 'অর্গানিক লেয়ার মুরগির খামার',
     category: 'দুধ এন্ড ডিম প্রজেক্ট',
-    image: 'https://picsum.photos/seed/eggs/800/600',
+    image: LayerPoultryFarm,
     roi: '১৫-১৯%',
     duration: '১২ মাস',
     raised: 600000,

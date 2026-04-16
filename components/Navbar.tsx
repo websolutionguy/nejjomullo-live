@@ -83,9 +83,9 @@ export default function Navbar() {
                 </span>
               )}
             </Link>
-            <button className="bg-secondary text-white px-6 py-2 rounded-full font-bold hover:bg-secondary/90 transition-all shadow-lg hover:shadow-secondary/20 cursor-pointer">
+            <Link href="/login" className="bg-secondary text-white px-6 py-2 rounded-full font-bold hover:bg-secondary/90 transition-all shadow-lg hover:shadow-secondary/20 cursor-pointer">
               লগইন করুন
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Toggle */}

@@ -3,6 +3,8 @@ import Footer from '@/components/Footer';
 import Image from 'next/image';
 import { Target, Eye, ShieldCheck, Heart } from 'lucide-react';
 
+import OurDestination from '@/public/images/Our History & Mission.jpg'
+
 export default function About() {
   return (
     <main className="min-h-screen bg-white">
@@ -26,7 +28,7 @@ export default function About() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
-              <Image src="https://picsum.photos/seed/history/800/1000" alt="Our History" fill className="object-cover" referrerPolicy="no-referrer" />
+              <Image src={OurDestination} alt="Our History" fill className="object-cover" referrerPolicy="no-referrer" />
             </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">আমাদের ইতিহাস ও লক্ষ্য</h2>
@@ -35,7 +37,7 @@ export default function About() {
                   নেয্যমূল্য ইনভেস্টমেন্ট প্ল্যাটফর্মের যাত্রা শুরু হয়েছিল একটি সাধারণ কিন্তু শক্তিশালী স্বপ্ন নিয়ে - বাংলাদেশের পরিশ্রমী কৃষকদের তাদের কঠোর পরিশ্রমের সঠিক মূল্য নিশ্চিত করা। আমরা লক্ষ্য করেছি যে, মধ্যস্বত্বভোগীদের কারণে কৃষকরা প্রায়শই বঞ্চিত হন এবং বিনিয়োগকারীরা নিরাপদ ও লাভজনক কৃষি প্রকল্পের অভাব বোধ করেন।
                 </p>
                 <p>
-                  ২০২৩ সালে প্রতিষ্ঠিত এই প্ল্যাটফর্মটি এখন হাজার হাজার কৃষকের আস্থার প্রতীক। আমরা প্রযুক্তির মাধ্যমে কৃষিকে আধুনিকায়ন করছি এবং সাধারণ মানুষকে সরাসরি কৃষি উৎপাদনে অংশগ্রহণের সুযোগ করে দিচ্ছি।
+                  ২০২৫ সালে প্রতিষ্ঠিত এই প্ল্যাটফর্মটি এখন হাজার হাজার কৃষকের আস্থার প্রতীক। আমরা প্রযুক্তির মাধ্যমে কৃষিকে আধুনিকায়ন করছি এবং সাধারণ মানুষকে সরাসরি কৃষি উৎপাদনে অংশগ্রহণের সুযোগ করে দিচ্ছি।
                 </p>
                 <p>
                   আমাদের লক্ষ্য হলো একটি টেকসই কৃষি ব্যবস্থা গড়ে তোলা যেখানে প্রতিটি কৃষক হবে স্বাবলম্বী এবং প্রতিটি বিনিয়োগকারী হবে গর্বিত অংশীদার।

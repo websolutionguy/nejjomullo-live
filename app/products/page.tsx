@@ -6,15 +6,24 @@ import Footer from '@/components/Footer';
 import ProductCard from '@/components/ProductCard';
 import { Search, SlidersHorizontal } from 'lucide-react';
 
+import MustardOil from '@/public/images/mustard-oil.jpg';
+import SundarbansNaturalHoney from '@/public/images/Sundarbans-Natural-Honey.jpg';
+import OrganicSpiceProcessing from '@/public/images/Organic-Spice-Processing.jpg';
+import CashewAlmondFarming from '@/public/images/Cashew & Almond Farming.jpg';
+import DairyFarm from '@/public/images/Dairy Farm.jpg';
+import LayerPoultryFarm from '@/public/images/Layer Poultry Farm.jpg';
+import Ghee from '@/public/images/Ghee.jpg';
+
+
 const products = [
-  { id: 'p1', title: 'খাঁটি গাওয়া ঘি (৫০০ গ্রাম)', price: 1250, image: 'https://picsum.photos/seed/p1/400/400', rating: 5, category: 'ওয়েল এন্ড ঘী' },
-  { id: 'p2', title: 'লিচু ফুলের মধু (১ কেজি)', price: 950, image: 'https://picsum.photos/seed/p2/400/400', rating: 4, category: 'মধু' },
-  { id: 'p3', title: 'প্রিমিয়াম কাজু বাদাম (২৫০ গ্রাম)', price: 450, image: 'https://picsum.photos/seed/p3/400/400', rating: 5, category: 'নাটস্ এন্ড সীডস্' },
-  { id: 'p4', title: 'অর্গানিক হলুদ গুঁড়া (২০০ গ্রাম)', price: 180, image: 'https://picsum.photos/seed/p4/400/400', rating: 4, category: 'মসলা' },
-  { id: 'p5', title: 'সরিষার তেল (১ লিটার)', price: 280, image: 'https://picsum.photos/seed/p5/400/400', rating: 5, category: 'ওয়েল এন্ড ঘী' },
-  { id: 'p6', title: 'কালোজিরা মধু (৫০০ গ্রাম)', price: 750, image: 'https://picsum.photos/seed/p6/400/400', rating: 5, category: 'মধু' },
-  { id: 'p7', title: 'অর্গানিক মরিচ গুঁড়া (২০০ গ্রাম)', price: 190, image: 'https://picsum.photos/seed/p7/400/400', rating: 4, category: 'মসলা' },
-  { id: 'p8', title: 'কাঠবাদাম (৫০০ গ্রাম)', price: 850, image: 'https://picsum.photos/seed/p8/400/400', rating: 5, category: 'নাটস্ এন্ড সীডস্' },
+  { id: 'p1', title: 'খাঁটি গাওয়া ঘি (৫০০ গ্রাম)', price: 1250, image: Ghee, rating: 5, category: 'ওয়েল এন্ড ঘী' },
+  { id: 'p2', title: 'লিচু ফুলের মধু (১ কেজি)', price: 950, image: SundarbansNaturalHoney, rating: 4, category: 'মধু' },
+  { id: 'p3', title: 'প্রিমিয়াম কাজু বাদাম (২৫০ গ্রাম)', price: 450, image: CashewAlmondFarming, rating: 5, category: 'নাটস্ এন্ড সীডস্' },
+  { id: 'p4', title: 'অর্গানিক হলুদ গুঁড়া (২০০ গ্রাম)', price: 180, image: OrganicSpiceProcessing, rating: 4, category: 'মসলা' },
+  { id: 'p5', title: 'সরিষার তেল (১ লিটার)', price: 280, image: MustardOil, rating: 5, category: 'ওয়েল এন্ড ঘী' },
+  { id: 'p6', title: 'কালোজিরা মধু (৫০০ গ্রাম)', price: 750, image: SundarbansNaturalHoney, rating: 5, category: 'মধু' },
+  { id: 'p7', title: 'অর্গানিক মরিচ গুঁড়া (২০০ গ্রাম)', price: 190, image: OrganicSpiceProcessing, rating: 4, category: 'মসলা' },
+  { id: 'p8', title: 'কাঠবাদাম (৫০০ গ্রাম)', price: 850, image: CashewAlmondFarming, rating: 5, category: 'নাটস্ এন্ড সীডস্' },
 ];
 
 const categories = ['সবগুলো', 'ওয়েল এন্ড ঘী', 'মধু', 'মসলা', 'নাটস্ এন্ড সীডস্', 'দুধ এন্ড ডিম'];
