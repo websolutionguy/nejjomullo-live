@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import Image, { type StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { ShoppingCart, Star } from 'lucide-react';
 import { useCart } from '@/context/CartContext';
@@ -9,7 +9,7 @@ interface ProductCardProps {
   id: string;
   title: string;
   price: number;
-  image: string;
+  image: string | StaticImageData;
   rating: number;
   category: string;
 }

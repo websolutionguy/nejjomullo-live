@@ -9,6 +9,12 @@ import Link from 'next/link';
 import toast from 'react-hot-toast';
 import { sendEmail } from '@/lib/emailjs';
 
+import emailjs from '@emailjs/browser';
+
+const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ?? '';
+const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_INVEST_TEMPLATE_ID ?? '';
+const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY ?? '';
+
 const projectsData = [
   { id: 'mustard-oil-1', title: 'প্রিমিয়াম সরিষার তেল উৎপাদন প্রকল্প' },
   { id: 'honey-collection-1', title: 'সুন্দরবনের প্রাকৃতিক মধু সংগ্রহ' },
@@ -41,17 +47,25 @@ export default function InvestPage() {
       user_address: formData.get('user_address'),
     };
 
-    const result = await sendEmail(data);
+    try {
+      const response = await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        data,
+        PUBLIC_KEY
+      );
 
-    if (result.success) {
       toast.success('আপনার বিনিয়োগের আবেদনটি সফলভাবে জমা হয়েছে!');
       setIsSubmitted(true);
-    } else {
+    } catch (error) {
+      console.error('EmailJS Error:', error);
       toast.error('দুঃখিত, আবেদনটি জমা দেওয়া সম্ভব হয়নি। আবার চেষ্টা করুন।');
+    } finally {
+      setIsSubmitting(false);
     }
-    
-    setIsSubmitting(false);
   };
+
+
 
   if (isSubmitted) {
     return (

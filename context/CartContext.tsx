@@ -1,13 +1,14 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import type { StaticImageData } from 'next/image';
 import toast from 'react-hot-toast';
 
 export interface CartItem {
   id: string;
   title: string;
   price: number;
-  image: string;
+  image: string | StaticImageData;
   quantity: number;
 }
 

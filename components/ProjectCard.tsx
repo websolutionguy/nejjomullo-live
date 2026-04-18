@@ -2,11 +2,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Calendar, TrendingUp, Clock, ArrowRight } from 'lucide-react';
 
+import type { StaticImageData } from 'next/image';
+
 interface ProjectCardProps {
   id: string;
   title: string;
   category: string;
-  image: string;
+  image: string | StaticImageData;
   roi: string;
   duration: string;
   raised: number;
