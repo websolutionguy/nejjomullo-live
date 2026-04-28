@@ -5,7 +5,7 @@ import ProjectCard from '@/components/ProjectCard';
 import ProductCard from '@/components/ProductCard';
 import Footer from '@/components/Footer';
 import LocationModal from '@/components/LocationModal';
-import { ArrowRight, Star, Quote } from 'lucide-react';
+import { ArrowRight, Star, Quote, Droplets, Leaf, Nut, Milk } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -65,7 +65,7 @@ const testimonials = [
   {
     name: 'আব্দুর রহমান',
     role: 'বিনিয়োগকারী',
-    text: 'নেয্যমূল্য প্ল্যাটফর্মে বিনিয়োগ করে আমি অত্যন্ত সন্তুষ্ট। তাদের স্বচ্ছতা এবং নিয়মিত আপডেট আমাকে মুগ্ধ করেছে।',
+    text: 'ন্যায্যমূল্য প্ল্যাটফর্মে বিনিয়োগ করে আমি অত্যন্ত সন্তুষ্ট। তাদের স্বচ্ছতা এবং নিয়মিত আপডেট আমাকে মুগ্ধ করেছে।',
     image: investor,
   },
   {
@@ -77,6 +77,8 @@ const testimonials = [
 ];
 
 export default function Home() {
+  const categoryIcons = [Droplets, Star, Leaf, Nut, Milk];
+
   return (
     <main className="min-h-screen">
       <LocationModal />
@@ -112,11 +114,14 @@ export default function Home() {
           <p className="text-gray-500 max-w-2xl mx-auto">সরাসরি খামার থেকে সংগৃহীত বিশুদ্ধ এবং প্রাকৃতিক পণ্যের বিশাল সমাহার</p>
         </div>
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {['ওয়েল এন্ড ঘী', 'মধু', 'মসলা', 'নাটস্ এন্ড সীডস্', 'দুধ এন্ড ডিম'].map((cat, i) => (
               <div key={i} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100 text-center group cursor-pointer">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-white transition-all">
-                  <Star className="w-8 h-8" />
+                  {(() => {
+                    const Icon = categoryIcons[i];
+                    return <Icon className="w-8 h-8" />;
+                  })()}
                 </div>
                 <h3 className="font-bold text-gray-800">{cat}</h3>
               </div>
@@ -134,7 +139,7 @@ export default function Home() {
             <p className="text-gray-500 max-w-2xl">সেরা মানের বিশুদ্ধ পণ্য এখন আপনার হাতের নাগালে</p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-4 gap-3">
             {featuredProducts.map((product, i) => (
               <ProductCard key={i} {...product} />
             ))}

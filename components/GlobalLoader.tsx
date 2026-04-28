@@ -58,7 +58,7 @@ export default function GlobalLoader() {
             transition={{ delay: 0.2 }}
             className="mt-8 text-center"
           >
-            <h2 className="text-2xl font-bold text-primary mb-2">নেয্যমূল্য</h2>
+            <h2 className="text-2xl font-bold text-primary mb-2">ন্যায্যমূল্য</h2>
             <div className="flex gap-1 justify-center">
               {[0, 1, 2].map((i) => (
                 <motion.div

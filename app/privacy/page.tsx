@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">গোপনীয়তা নীতি</h1>
           <p className="text-xl text-white/80 max-w-2xl mx-auto">
-            নেয্যমূল্য প্ল্যাটফর্মে আপনার তথ্যের সুরক্ষা আমাদের প্রধান অগ্রাধিকার।
+            ন্যায্যমূল্য প্ল্যাটফর্মে আপনার তথ্যের সুরক্ষা আমাদের প্রধান অগ্রাধিকার।
           </p>
         </div>
       </section>
@@ -30,7 +30,7 @@ export default function PrivacyPolicy() {
                 <div className="flex items-start gap-4 mb-8 bg-primary/5 p-6 rounded-2xl border border-primary/10">
                   <Info className="w-6 h-6 text-primary shrink-0 mt-1" />
                   <p className="m-0 text-gray-700">
-                    <strong>নেয্যমূল্য</strong>, আমাদের ওয়েবসাইট (<a href="https://nejjomullo.com/" className="text-primary hover:underline">https://nejjomullo.com/</a>) এ আগত ভিজিটরদের গোপনীয়তা রক্ষা করা আমাদের প্রধান অগ্রাধিকারগুলোর একটি। এই প্রাইভেসি পলিসি ডকুমেন্টে বর্ণনা করা হয়েছে—নেয্যমূল্য কী ধরনের তথ্য সংগ্রহ করে এবং সেগুলো কীভাবে ব্যবহার করা হয়।
+                    <strong>ন্যায্যমূল্য</strong>, আমাদের ওয়েবসাইট (<a href="https://nejjomullo.com/" className="text-primary hover:underline">https://nejjomullo.com/</a>) এ আগত ভিজিটরদের গোপনীয়তা রক্ষা করা আমাদের প্রধান অগ্রাধিকারগুলোর একটি। এই প্রাইভেসি পলিসি ডকুমেন্টে বর্ণনা করা হয়েছে—ন্যায্যমূল্য কী ধরনের তথ্য সংগ্রহ করে এবং সেগুলো কীভাবে ব্যবহার করা হয়।
                   </p>
                 </div>
 
@@ -108,7 +108,7 @@ export default function PrivacyPolicy() {
                     📁 লগ ফাইল (Log Files)
                   </h2>
                   <p className="mb-6">
-                    নেয্যমূল্য একটি স্ট্যান্ডার্ড প্রক্রিয়া অনুসরণ করে লগ ফাইল ব্যবহার করে। এই ফাইলগুলো ভিজিটরদের ওয়েবসাইট ভিজিট করার সময় লগ করে। সব হোস্টিং কোম্পানি এই পদ্ধতি ব্যবহার করে।
+                    ন্যায্যমূল্য একটি স্ট্যান্ডার্ড প্রক্রিয়া অনুসরণ করে লগ ফাইল ব্যবহার করে। এই ফাইলগুলো ভিজিটরদের ওয়েবসাইট ভিজিট করার সময় লগ করে। সব হোস্টিং কোম্পানি এই পদ্ধতি ব্যবহার করে।
                   </p>
                   <p className="mb-4 text-gray-800 font-medium">এই লগ ফাইলের মাধ্যমে সংগ্রহকৃত তথ্যের মধ্যে থাকতে পারে:</p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">

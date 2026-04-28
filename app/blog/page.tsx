@@ -4,12 +4,17 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Calendar, User, ArrowRight } from 'lucide-react';
 
+import MasterdFood from '@/public/images/mustard-cultivation.jpg';
+import Organic from '@/public/images/organic-products.jpg';
+import Invest from '@/public/images/investment-in-agricultural.jpg';
+
 const blogPosts = [
   {
     id: '1',
     title: 'আধুনিক পদ্ধতিতে সরিষা চাষের সঠিক নিয়ম',
+    slug: 'modern-mustard-cultivation',
     excerpt: 'সরিষা চাষে লাভবান হতে হলে সঠিক জাত নির্বাচন এবং আধুনিক চাষ পদ্ধতি জানা অত্যন্ত জরুরি...',
-    image: 'https://picsum.photos/seed/blog1/800/500',
+    image: MasterdFood,
     date: '১০ এপ্রিল, ২০২৪',
     author: 'কৃষিবিদ মো: হাসান',
     category: 'চাষ পদ্ধতি',
@@ -17,8 +22,9 @@ const blogPosts = [
   {
     id: '2',
     title: 'কেন অর্গানিক পণ্য আপনার স্বাস্থ্যের জন্য জরুরি?',
+    slug: 'why-organic-products-are-essential-for-your-health',
     excerpt: 'বর্তমান সময়ে রাসায়নিকযুক্ত খাবারের ভিড়ে অর্গানিক পণ্য কেন সেরা পছন্দ হওয়া উচিত তা নিয়ে বিস্তারিত...',
-    image: 'https://picsum.photos/seed/blog2/800/500',
+    image: Organic,
     date: '০৮ এপ্রিল, ২০২৪',
     author: 'ডা: নাজনীন আক্তার',
     category: 'স্বাস্থ্য ও পুষ্টি',
@@ -26,8 +32,9 @@ const blogPosts = [
   {
     id: '3',
     title: 'কৃষি খাতে বিনিয়োগের ভবিষ্যৎ ও সম্ভাবনা',
+    slug: 'future-and-potential-of-investing-in-agriculture',
     excerpt: 'বাংলাদেশের অর্থনীতিতে কৃষি খাতের অবদান এবং কেন এটি বিনিয়োগের জন্য একটি নিরাপদ ক্ষেত্র...',
-    image: 'https://picsum.photos/seed/blog3/800/500',
+    image: Invest,
     date: '০৫ এপ্রিল, ২০২৪',
     author: 'অর্থনীতিবিদ ড. রহিম',
     category: 'বিনিয়োগ',
@@ -79,7 +86,7 @@ export default function Blog() {
                   </div>
                   
                   <h2 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors">
-                    <Link href={`/blog/${post.id}`}>{post.title}</Link>
+                    <Link href={`/blog/${post.slug}`}>{post.title}</Link>
                   </h2>
                   
                   <p className="text-gray-500 mb-8 line-clamp-3 leading-relaxed">
@@ -87,7 +94,7 @@ export default function Blog() {
                   </p>
                   
                   <Link
-                    href={`/blog/${post.id}`}
+                    href={`/blog/${post.slug}`}
                     className="mt-auto flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all"
                   >
                     আরও পড়ুন <ArrowRight className="w-5 h-5" />

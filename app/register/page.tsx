@@ -74,7 +74,7 @@ export default function RegisterPage() {
                 <div className="flex items-start gap-3 ml-1 py-2">
                   <input type="checkbox" id="terms" className="mt-1 accent-secondary" />
                   <label htmlFor="terms" className="text-xs text-gray-500 leading-relaxed">
-                    আমি নেয্যমূল্য-এর <Link href="/terms" className="text-secondary font-bold hover:underline">শর্তাবলী</Link> এবং <Link href="/privacy" className="text-secondary font-bold hover:underline">গোপনীয়তা নীতি</Link> মেনে নিচ্ছি।
+                    আমি ন্যায্যমূল্য-এর <Link href="/terms" className="text-secondary font-bold hover:underline">শর্তাবলী</Link> এবং <Link href="/privacy" className="text-secondary font-bold hover:underline">গোপনীয়তা নীতি</Link> মেনে নিচ্ছি।
                   </label>
                 </div>
 

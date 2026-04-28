@@ -15,7 +15,7 @@ export default function TermsAndConditions() {
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">শর্তাবলী (Terms & Conditions)</h1>
           <p className="text-xl text-white/80 max-w-2xl mx-auto">
-            নেয্যমূল্য প্ল্যাটফর্ম ব্যবহারের নিয়ম ও বিধিমালা।
+            ন্যায্যমূল্য প্ল্যাটফর্ম ব্যবহারের নিয়ম ও বিধিমালা।
           </p>
         </div>
       </section>
@@ -30,9 +30,9 @@ export default function TermsAndConditions() {
                 <div className="flex items-start gap-4 mb-12 bg-primary/5 p-8 rounded-3xl border border-primary/10">
                   <Info className="w-8 h-8 text-primary shrink-0 mt-1" />
                   <div>
-                    <h2 className="text-xl font-bold text-gray-900 mb-2 m-0">নেয্যমূল্য-এ স্বাগতম!</h2>
+                    <h2 className="text-xl font-bold text-gray-900 mb-2 m-0">ন্যায্যমূল্য-এ স্বাগতম!</h2>
                     <p className="m-0 text-gray-700">
-                      এই শর্তাবলীতে নেয্যমূল্য-এর ওয়েবসাইট (<a href="https://nejjomullo.com/" className="text-primary hover:underline">https://nejjomullo.com/</a>) ব্যবহারের নিয়ম ও বিধিমালা বর্ণনা করা হয়েছে। এই ওয়েবসাইট ব্যবহার করার মাধ্যমে আমরা ধরে নিচ্ছি যে আপনি এই শর্তাবলীতে সম্মত হয়েছেন। যদি আপনি এই শর্তগুলো মেনে নিতে রাজি না হন, তাহলে অনুগ্রহ করে নেয্যমূল্য ব্যবহার করা থেকে বিরত থাকুন।
+                      এই শর্তাবলীতে ন্যায্যমূল্য-এর ওয়েবসাইট (<a href="https://nejjomullo.com/" className="text-primary hover:underline">https://nejjomullo.com/</a>) ব্যবহারের নিয়ম ও বিধিমালা বর্ণনা করা হয়েছে। এই ওয়েবসাইট ব্যবহার করার মাধ্যমে আমরা ধরে নিচ্ছি যে আপনি এই শর্তাবলীতে সম্মত হয়েছেন। যদি আপনি এই শর্তগুলো মেনে নিতে রাজি না হন, তাহলে অনুগ্রহ করে ন্যায্যমূল্য ব্যবহার করা থেকে বিরত থাকুন।
                     </p>
                   </div>
                 </div>
@@ -46,7 +46,7 @@ export default function TermsAndConditions() {
                     <p className="text-sm mb-4">এই শর্তাবলী, প্রাইভেসি পলিসি এবং অন্যান্য চুক্তিতে:</p>
                     <ul className="space-y-2 text-sm list-none p-0">
                       <li className="flex gap-2"><strong>&quot;আপনি&quot;:</strong> ওয়েবসাইট ব্যবহারকারী</li>
-                      <li className="flex gap-2"><strong>&quot;আমরা&quot;:</strong> নেয্যমূল্য</li>
+                      <li className="flex gap-2"><strong>&quot;আমরা&quot;:</strong> ন্যায্যমূল্য</li>
                       <li className="flex gap-2"><strong>&quot;পক্ষ&quot;:</strong> ব্যবহারকারী এবং কোম্পানি উভয়</li>
                     </ul>
                   </div>
@@ -57,7 +57,7 @@ export default function TermsAndConditions() {
                       🍪 কুকিজ
                     </h2>
                     <p className="text-sm">
-                      আমরা কুকিজ ব্যবহার করি। নেয্যমূল্য ওয়েবসাইট ব্যবহার করার মাধ্যমে আপনি আমাদের প্রাইভেসি পলিসি অনুযায়ী কুকিজ ব্যবহারে সম্মতি দিচ্ছেন।
+                      আমরা কুকিজ ব্যবহার করি। ন্যায্যমূল্য ওয়েবসাইট ব্যবহার করার মাধ্যমে আপনি আমাদের প্রাইভেসি পলিসি অনুযায়ী কুকিজ ব্যবহারে সম্মতি দিচ্ছেন।
                     </p>
                   </div>
                 </div>
@@ -68,7 +68,7 @@ export default function TermsAndConditions() {
                     📜 লাইসেন্স (License)
                   </h2>
                   <p className="mb-6">
-                    নেয্যমূল্য এবং/অথবা এর লাইসেন্সদাতারা ওয়েবসাইটের সকল কনটেন্টের মালিকানা রাখে। সকল মেধাস্বত্ব সংরক্ষিত। আপনি শুধুমাত্র ব্যক্তিগত ব্যবহারের জন্য এই ওয়েবসাইট ব্যবহার করতে পারবেন।
+                    ন্যায্যমূল্য এবং/অথবা এর লাইসেন্সদাতারা ওয়েবসাইটের সকল কনটেন্টের মালিকানা রাখে। সকল মেধাস্বত্ব সংরক্ষিত। আপনি শুধুমাত্র ব্যক্তিগত ব্যবহারের জন্য এই ওয়েবসাইট ব্যবহার করতে পারবেন।
                   </p>
                   <div className="bg-red-50 p-6 rounded-2xl border border-red-100">
                     <p className="font-bold text-red-700 mb-4">❌ আপনি যা করতে পারবেন না:</p>
@@ -89,7 +89,7 @@ export default function TermsAndConditions() {
                     💬 ব্যবহারকারীর মন্তব্য
                   </h2>
                   <p className="mb-4">
-                    ওয়েবসাইটের কিছু অংশে ব্যবহারকারীরা মতামত প্রকাশ করতে পারবেন। নেয্যমূল্য মন্তব্য প্রকাশের আগে তা যাচাই করে না। মন্তব্যগুলো ব্যবহারকারীর নিজস্ব মতামত। আমরা কোনো মন্তব্যের জন্য দায়ী নই।
+                    ওয়েবসাইটের কিছু অংশে ব্যবহারকারীরা মতামত প্রকাশ করতে পারবেন। ন্যায্যমূল্য মন্তব্য প্রকাশের আগে তা যাচাই করে না। মন্তব্যগুলো ব্যবহারকারীর নিজস্ব মতামত। আমরা কোনো মন্তব্যের জন্য দায়ী নই।
                   </p>
                   <p className="font-medium text-gray-800">
                     আমরা যেকোনো অনুপযুক্ত বা আপত্তিকর মন্তব্য মুছে ফেলার অধিকার রাখি।

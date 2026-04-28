@@ -42,7 +42,7 @@ export default function Navbar() {
               <span className="text-white font-bold text-xl">N</span>
             </div>
             <span className="text-2xl font-bold text-primary">
-              নেয্যমূল্য
+              ন্যায্যমূল্য
             </span> */}
             <Image
               src={Logo}

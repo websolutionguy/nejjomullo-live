@@ -14,7 +14,7 @@ export default function Footer() {
               {/* <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">N</span>
               </div>
-              <span className="text-2xl font-bold text-white">নেয্যমূল্য</span> */}
+              <span className="text-2xl font-bold text-white">ন্যায্যমূল্য</span> */}
 
               <Image
                 src={footerLogo}
@@ -25,7 +25,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              নেয্যমূল্য একটি আধুনিক এগ্রোটেক প্ল্যাটফর্ম যা কৃষক এবং বিনিয়োগকারীদের মধ্যে সরাসরি সংযোগ স্থাপন করে। আমরা কৃষি খাতে স্বচ্ছতা এবং সমৃদ্ধি নিশ্চিত করতে কাজ করি।
+              ন্যায্যমূল্য একটি আধুনিক এগ্রোটেক প্ল্যাটফর্ম যা কৃষক এবং বিনিয়োগকারীদের মধ্যে সরাসরি সংযোগ স্থাপন করে। আমরা কৃষি খাতে স্বচ্ছতা এবং সমৃদ্ধি নিশ্চিত করতে কাজ করি।
             </p>
             <div className="flex items-center gap-4">
               <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
@@ -86,7 +86,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} নেয্যমূল্য ইনভেস্টমেন্ট প্ল্যাটফর্ম। সর্বস্বত্ব সংরক্ষিত।
+            © {new Date().getFullYear()} ন্যায্যমূল্য ইনভেস্টমেন্ট প্ল্যাটফর্ম। সর্বস্বত্ব সংরক্ষিত।
           </p>
           <div className="flex items-center gap-6 text-sm text-gray-500">
             <Link href="/privacy" className="hover:text-white">গোপনীয়তা নীতি</Link>

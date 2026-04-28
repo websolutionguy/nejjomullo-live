@@ -1,13 +1,23 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
-import { Calendar, User, Tag, Share2, Facebook, Twitter, Linkedin } from 'lucide-react';
+import { notFound } from 'next/navigation';
+import { Calendar, User, Tag, Facebook, Twitter, Linkedin } from 'lucide-react';
 
-export default async function BlogPost({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
-  // In a real app, you'd fetch the post by ID
-  const post = {
+import MasterdFood from '@/public/images/mustard-cultivation.jpg';
+import Organic from '@/public/images/organic-products.jpg';
+import Invest from '@/public/images/investment-in-agricultural.jpg';
+
+const blogPosts = [
+  {
+    id: '1',
     title: 'আধুনিক পদ্ধতিতে সরিষা চাষের সঠিক নিয়ম',
+    slug: 'modern-mustard-cultivation',
+    excerpt: 'সরিষা চাষে লাভবান হতে হলে সঠিক জাত নির্বাচন এবং আধুনিক চাষ পদ্ধতি জানা অত্যন্ত জরুরি...',
+    image: MasterdFood,
+    date: '১০ এপ্রিল, ২০২৪',
+    author: 'কৃষিবিদ মো: হাসান',
+    category: 'চাষ পদ্ধতি',
     content: `
       <p>সরিষা বাংলাদেশের একটি প্রধান ভোজ্য তেলবীজ ফসল। সরিষা চাষে লাভবান হতে হলে সঠিক জাত নির্বাচন এবং আধুনিক চাষ পদ্ধতি জানা অত্যন্ত জরুরি।</p>
       <h3>১. জমি তৈরি</h3>
@@ -19,11 +29,52 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
       <h3>৪. সেচ ও নিড়ানি</h3>
       <p>ফুল আসার সময় এবং ফল ধরার সময় হালকা সেচ দিতে হবে। আগাছা পরিষ্কার রাখা অত্যন্ত জরুরি।</p>
     `,
-    image: 'https://picsum.photos/seed/blog1/1200/600',
-    date: '১০ এপ্রিল, ২০২৪',
-    author: 'কৃষিবিদ মো: হাসান',
-    category: 'চাষ পদ্ধতি',
-  };
+  },
+  {
+    id: '2',
+    title: 'কেন অর্গানিক পণ্য আপনার স্বাস্থ্যের জন্য জরুরি?',
+    slug: 'why-organic-products-are-essential-for-your-health',
+    excerpt: 'বর্তমান সময়ে রাসায়নিকযুক্ত খাবারের ভিড়ে অর্গানিক পণ্য কেন সেরা পছন্দ হওয়া উচিত তা নিয়ে বিস্তারিত...',
+    image: Organic,
+    date: '০৮ এপ্রিল, ২০২৪',
+    author: 'ডা: নাজনীন আক্তার',
+    category: 'স্বাস্থ্য ও পুষ্টি',
+    content: `
+      <p>রাসায়নিক মুক্ত অর্গানিক পণ্য গ্রহণ করলে শরীরের রোগ প্রতিরোধ ক্ষমতা বেড়ে যায় এবং দীর্ঘস্থায়ী রোগের ঝুঁকি কমে।</p>
+      <h3>১. কীভাবে অর্গানিক সনাক্ত করবেন</h3>
+      <p>লেবেল পড়ুন, উৎপাদনের পদ্ধতি দেখুন, এবং বিশ্বস্ত সরবরাহকারীর কাছ থেকে ক্রয় করুন।</p>
+      <h3>২. আপনার খাদ্যাভাসে অর্গানিক পণ্যের ভূমিকা</h3>
+      <p>অর্গানিক ফল এবং সবজি অ্যাডিটিভ মুক্ত এবং পুষ্টিতে সমৃদ্ধ।</p>
+      <h3>৩. পরিবেশবান্ধব চাষ</h3>
+      <p>অর্গানিক চাষ পানির দুষণ কমায় এবং মাটি উর্বর রাখে।</p>
+    `,
+  },
+  {
+    id: '3',
+    title: 'কৃষি খাতে বিনিয়োগের ভবিষ্যৎ ও সম্ভাবনা',
+    slug: 'future-and-potential-of-investing-in-agriculture',
+    excerpt: 'বাংলাদেশের অর্থনীতিতে কৃষি খাতের অবদান এবং কেন এটি বিনিয়োগের জন্য একটি নিরাপদ ক্ষেত্র...',
+    image: Invest,
+    date: '০৫ এপ্রিল, ২০২৪',
+    author: 'অর্থনীতিবিদ ড. রহিম',
+    category: 'বিনিয়োগ',
+    content: `
+      <p>কৃষি খাত বাংলাদেশের অর্থনৈতিক প্রবৃদ্ধিতে গুরুত্বপূর্ণ ভূমিকা রাখে। এটি স্থিতিশীল রিটার্ন এবং কর্মসংস্থান তৈরি করে।</p>
+      <h3>১. কৃষি বিনিয়োগের সুবিধা</h3>
+      <p>উচ্চ চাহিদা, বাজার সাপোর্ট, এবং সরকারী প্রণোদনা কৃষি বিনিয়োগকে লাভজনক করে তোলে।</p>
+      <h3>২. ঝুঁকি ব্যবস্থাপনা</h3>
+      <p>বিভিন্ন ফসল ও প্রকল্পে বিনিয়োগ করলে ঝুঁকি কমে যায় এবং স্থিতিশীল আয় আসে।</p>
+      <h3>৩. টেকসই কৃষি</h3>
+      <p>সঠিক প্রযুক্তি ও পরিবেশবান্ধব চাষপদ্ধতি দীর্ঘমেয়াদে লাভ বাড়ায়।</p>
+    `,
+  },
+];
+
+export default function BlogPost({ params }: { params: { id: string } }) {
+  const post = blogPosts.find((item) => item.slug === params.id);
+  if (!post) {
+    notFound();
+  }
 
   return (
     <main className="min-h-screen bg-white">

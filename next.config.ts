@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
   },
   // Allow access to remote image placeholder.
   images: {
+    domains: ['picsum.photos', 'images.unsplash.com'],
     remotePatterns: [
       {
         protocol: 'https',
