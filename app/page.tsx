@@ -63,7 +63,7 @@ import investor from '@/public/images/investor.jpg';
 
 const testimonials = [
   {
-    name: 'আব্দুর রহমান',
+    name: 'মো: আব্দুর রহমান',
     role: 'বিনিয়োগকারী',
     text: 'ন্যায্যমূল্য প্ল্যাটফর্মে বিনিয়োগ করে আমি অত্যন্ত সন্তুষ্ট। তাদের স্বচ্ছতা এবং নিয়মিত আপডেট আমাকে মুগ্ধ করেছে।',
     image: investor,
